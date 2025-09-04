@@ -59,6 +59,7 @@
     --color-primary-color: #043873;
     --color-primary2-color: #4F9CF9;
     --color-secondary1-color: #FFE492;
+    --color-secondary2-color: #A7CEFC;
     --color-secondary3-color: #FFFFFF;
     --color-secondary4-color: #212529;
     --font-primary: "Inter", sans-serif;
@@ -852,10 +853,52 @@
       }
     }
   }
+  .hover\:bg-primary-color {
+    &:hover {
+      @media (hover: hover) {
+        background-color: var(--color-primary-color);
+      }
+    }
+  }
+  .hover\:bg-primary2-color {
+    &:hover {
+      @media (hover: hover) {
+        background-color: var(--color-primary2-color);
+      }
+    }
+  }
+  .hover\:bg-secondary1-color {
+    &:hover {
+      @media (hover: hover) {
+        background-color: var(--color-secondary1-color);
+      }
+    }
+  }
+  .hover\:bg-secondary2-color {
+    &:hover {
+      @media (hover: hover) {
+        background-color: var(--color-secondary2-color);
+      }
+    }
+  }
+  .hover\:text-primary-color {
+    &:hover {
+      @media (hover: hover) {
+        color: var(--color-primary-color);
+      }
+    }
+  }
   .hover\:text-secondary1-color {
     &:hover {
       @media (hover: hover) {
         color: var(--color-secondary1-color);
+      }
+    }
+  }
+  .hover\:text-secondary3-color {
+    &:hover {
+      @media (hover: hover) {
+        color: var(--color-secondary3-color);
       }
     }
   }
