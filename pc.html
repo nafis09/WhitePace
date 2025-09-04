@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -11,375 +11,129 @@
     @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
   </style>
 </head>
-<body class="font-inter">
+
+<body class="font-primary">
 
   <!-- Navbar -->
-  <nav class="bg-primary-color flex justify-between items-center px-4 md:px-12 py-4 fixed top-0 w-full z-50 text-white">
-    <div>
-      <img src="images/Logo.png" alt="WhitePace Logo" class="h-10">
+  <nav class="bg-primary-color fixed top-0 w-full z-40">
+    <div class="flex justify-between items-center p-4 md:px-8">
+      <div class="ml-[220px]">
+        <img src="images/Logo.png" alt="Logo">
+      </div>
+
+      <!-- Desktop Menu -->
+      <ul class="hidden md:flex space-x-6 items-center text-secondary3-color">
+        <li class="relative group">
+          <button class="flex items-center gap-1 hover:text-secondary1-color">Products
+            <img src="images/Down Arrow.png" alt="">
+          </button>
+          <ul class="absolute left-0 mt-2 hidden w-40 bg-white text-secondary4-color rounded-lg shadow-lg group-hover:block">
+            <li><a href="#" class="block px-4 py-4 hover:text-secondary1-color">Overview</a></li>
+            <li><a href="#" class="block px-4 py-4 hover:text-secondary1-color">Pricing</a></li>
+            <li><a href="#" class="block px-4 py-4 hover:text-secondary1-color">Customer Stories</a></li>
+          </ul>
+        </li>
+        <!-- Repeat for Solutions, Resources, Pricing -->
+        <li class="relative group">
+          <button class="flex items-center gap-1 hover:text-secondary1-color">Solutions
+            <img src="images/Down Arrow.png" alt="">
+          </button>
+          <ul class="absolute left-0 mt-2 hidden w-40 bg-white text-secondary4-color rounded-lg shadow-lg group-hover:block">
+            <li><a href="#" class="block px-4 py-4 hover:text-secondary1-color">Overview</a></li>
+            <li><a href="#" class="block px-4 py-4 hover:text-secondary1-color">Pricing</a></li>
+            <li><a href="#" class="block px-4 py-4 hover:text-secondary1-color">Customer Stories</a></li>
+          </ul>
+        </li>
+        <li class="relative group">
+          <button class="flex items-center gap-1 hover:text-secondary1-color">Resources
+            <img src="images/Down Arrow.png" alt="">
+          </button>
+          <ul class="absolute left-0 mt-2 hidden w-40 bg-white text-secondary4-color rounded-lg shadow-lg group-hover:block">
+            <li><a href="#" class="block px-4 py-4 hover:text-secondary1-color">Overview</a></li>
+            <li><a href="#" class="block px-4 py-4 hover:text-secondary1-color">Pricing</a></li>
+            <li><a href="#" class="block px-4 py-4 hover:text-secondary1-color">Customer Stories</a></li>
+          </ul>
+        </li>
+        <li class="relative group">
+          <button class="flex items-center gap-1 hover:text-secondary1-color">Pricing
+            <img src="images/Down Arrow.png" alt="">
+          </button>
+          <ul class="absolute left-0 mt-2 hidden w-40 bg-white text-secondary4-color rounded-lg shadow-lg group-hover:block">
+            <li><a href="#" class="block px-4 py-4 hover:text-secondary1-color">Overview</a></li>
+            <li><a href="#" class="block px-4 py-4 hover:text-secondary1-color">Pricing</a></li>
+            <li><a href="#" class="block px-4 py-4 hover:text-secondary1-color">Customer Stories</a></li>
+          </ul>
+        </li>
+
+        <li><a href="#" class="hover:text-secondary3-color hover:bg-primary2-color bg-secondary1-color text-primary-color py-[18px] px-10 rounded-lg">Login</a></li>
+        <li><a href="#" class="hover:text-primary-color hover:bg-secondary1-color bg-primary2-color text-secondary3-color py-[18px] px-10 rounded-lg">Try Whitepace free →</a></li>
+      </ul>
+
+      <!-- Hamburger Menu Button -->
+      <div class="md:hidden">
+        <button id="hamburgerBtn" class="text-white text-2xl"><i class="fa-solid fa-bars"></i></button>
+      </div>
     </div>
 
-    <!-- Desktop Menu -->
-    <ul class="hidden md:flex space-x-6 items-center font-primary text-secondary3-color">
-      <li class="relative group">
-        <button class="flex items-center gap-1 hover:text-secondary1-color">Products
-          <img src="images/Down Arrow.png" alt="">
-        </button>
-        <ul class="absolute left-0 mt-2 hidden w-40 bg-white text-secondary4-color rounded-lg shadow-lg group-hover:block">
-          <li><a href="#" class="block px-4 py-2 hover:text-secondary1-color">Overview</a></li>
-          <li><a href="#" class="block px-4 py-2 hover:text-secondary1-color">Pricing</a></li>
-          <li><a href="#" class="block px-4 py-2 hover:text-secondary1-color">Customer Stories</a></li>
-        </ul>
-      </li>
-      <li class="relative group">
-        <button class="flex items-center gap-1 hover:text-secondary1-color">Solutions
-          <img src="images/Down Arrow.png" alt="">
-        </button>
-        <ul class="absolute left-0 mt-2 hidden w-40 bg-white text-secondary4-color rounded-lg shadow-lg group-hover:block">
-          <li><a href="#" class="block px-4 py-2 hover:text-secondary1-color">Overview</a></li>
-          <li><a href="#" class="block px-4 py-2 hover:text-secondary1-color">Pricing</a></li>
-          <li><a href="#" class="block px-4 py-2 hover:text-secondary1-color">Customer Stories</a></li>
-        </ul>
-      </li>
-      <li class="relative group">
-        <button class="flex items-center gap-1 hover:text-secondary1-color">Resources
-          <img src="images/Down Arrow.png" alt="">
-        </button>
-        <ul class="absolute left-0 mt-2 hidden w-40 bg-white text-secondary4-color rounded-lg shadow-lg group-hover:block">
-          <li><a href="#" class="block px-4 py-2 hover:text-secondary1-color">Overview</a></li>
-          <li><a href="#" class="block px-4 py-2 hover:text-secondary1-color">Pricing</a></li>
-          <li><a href="#" class="block px-4 py-2 hover:text-secondary1-color">Customer Stories</a></li>
-        </ul>
-      </li>
-      <li class="relative group">
-        <button class="flex items-center gap-1 hover:text-secondary1-color">Pricing
-          <img src="images/Down Arrow.png" alt="">
-        </button>
-        <ul class="absolute left-0 mt-2 hidden w-40 bg-white text-secondary4-color rounded-lg shadow-lg group-hover:block">
-          <li><a href="#" class="block px-4 py-2 hover:text-secondary1-color">Overview</a></li>
-          <li><a href="#" class="block px-4 py-2 hover:text-secondary1-color">Pricing</a></li>
-          <li><a href="#" class="block px-4 py-2 hover:text-secondary1-color">Customer Stories</a></li>
-        </ul>
-      </li>
-      <li><a href="#" class="hover:text-secondary3-color hover:bg-primary2-color bg-secondary1-color text-primary-color py-2 px-4 rounded-lg">Login</a></li>
-      <li><a href="#" class="hover:text-primary-color hover:bg-secondary1-color bg-primary2-color text-secondary3-color py-2 px-4 rounded-lg">Try Whitepace free →</a></li>
-    </ul>
-
-    <!-- Hamburger (Mobile) -->
-    <button id="menuBtn" class="md:hidden focus:outline-none">
-      <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
-      </svg>
-    </button>
+    <!-- Mobile Menu -->
+    <div id="mobileMenu" class="hidden md:hidden bg-primary-color text-white w-full">
+      <ul class="flex flex-col space-y-4 p-4">
+        <li class="relative group">
+          <button class="flex items-center justify-between w-full">Products <i class="fa-solid fa-chevron-down"></i></button>
+          <ul class="hidden flex-col mt-2 space-y-2 pl-4">
+            <li><a href="#">Overview</a></li>
+            <li><a href="#">Pricing</a></li>
+            <li><a href="#">Customer Stories</a></li>
+          </ul>
+        </li>
+        <li class="relative group">
+          <button class="flex items-center justify-between w-full">Solutions <i class="fa-solid fa-chevron-down"></i></button>
+          <ul class="hidden flex-col mt-2 space-y-2 pl-4">
+            <li><a href="#">Overview</a></li>
+            <li><a href="#">Pricing</a></li>
+            <li><a href="#">Customer Stories</a></li>
+          </ul>
+        </li>
+        <li class="relative group">
+          <button class="flex items-center justify-between w-full">Resources <i class="fa-solid fa-chevron-down"></i></button>
+          <ul class="hidden flex-col mt-2 space-y-2 pl-4">
+            <li><a href="#">Overview</a></li>
+            <li><a href="#">Pricing</a></li>
+            <li><a href="#">Customer Stories</a></li>
+          </ul>
+        </li>
+        <li class="relative group">
+          <button class="flex items-center justify-between w-full">Pricing <i class="fa-solid fa-chevron-down"></i></button>
+          <ul class="hidden flex-col mt-2 space-y-2 pl-4">
+            <li><a href="#">Overview</a></li>
+            <li><a href="#">Pricing</a></li>
+            <li><a href="#">Customer Stories</a></li>
+          </ul>
+        </li>
+        <li><a href="#" class="py-2 px-4 bg-secondary1-color text-primary-color rounded-lg block text-center">Login</a></li>
+        <li><a href="#" class="py-2 px-4 bg-primary2-color text-secondary3-color rounded-lg block text-center">Try Whitepace free →</a></li>
+      </ul>
+    </div>
   </nav>
 
-  <!-- Mobile Menu -->
-  <div id="mobileMenu" class="hidden flex-col bg-primary-color text-white w-full px-6 py-6 md:hidden mt-20 space-y-4">
-    <a href="#" class="block hover:text-secondary1-color">Products</a>
-    <a href="#" class="block hover:text-secondary1-color">Solutions</a>
-    <a href="#" class="block hover:text-secondary1-color">Resources</a>
-    <a href="#" class="block hover:text-secondary1-color">Pricing</a>
-    <a href="#" class="block px-3 py-2 border border-white rounded-md text-center">Login</a>
-    <a href="#" class="block px-3 py-2 bg-secondary1-color text-white rounded-md text-center">Try Whitepace free →</a>
-  </div>
+  <!-- Add your remaining sections here exactly as in your original code (sections, plans, clients, footer) -->
 
   <script>
-    const menuBtn = document.getElementById("menuBtn");
-    const mobileMenu = document.getElementById("mobileMenu");
-    menuBtn.addEventListener("click", () => {
-      mobileMenu.classList.toggle("hidden");
+    const hamburgerBtn = document.getElementById('hamburgerBtn');
+    const mobileMenu = document.getElementById('mobileMenu');
+
+    hamburgerBtn.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+
+    // Mobile dropdown toggle
+    const mobileDropdowns = mobileMenu.querySelectorAll('li > button');
+    mobileDropdowns.forEach(btn => {
+      btn.addEventListener('click', () => {
+        const submenu = btn.nextElementSibling;
+        submenu.classList.toggle('hidden');
+      });
     });
   </script>
-
-  <!-- Hero Section -->
-  <section class="bg-primary-color pt-32">
-    <div class="flex flex-col md:flex-row items-center gap-6 md:gap-20 px-4 md:px-24">
-      <div>
-        <h1 class="text-secondary3-color font-bold text-4xl md:text-6xl">Get More Done with<br>Whitepace</h1>
-        <p class="mt-4 md:mt-6 text-secondary3-color text-base md:text-lg">Project management software that enables your teams to collaborate, plan, analyze and manage everyday tasks</p>
-        <a href="#" class="mt-4 inline-block bg-primary2-color text-secondary3-color px-6 py-3 md:px-10 md:py-4 rounded-lg hover:bg-opacity-90">Try Whitepace free →</a>
-      </div>
-      <div>
-        <img src="images/img2.jpg" alt="" class="w-full max-w-md md:max-w-lg mx-auto">
-      </div>
-    </div>
-  </section>
-
-  <!-- Project Management Section -->
-  <section class="bg-secondary3-color py-16 px-4 md:px-24">
-    <div class="flex flex-col md:flex-row items-center gap-6 md:gap-20">
-      <div>
-        <h1 class="text-secondary4-color font-bold text-4xl md:text-6xl">Project Management</h1>
-        <p class="mt-4 text-secondary4-color text-base md:text-lg">Images, videos, PDFs and audio files are supported. Create math expressions and diagrams directly from the app. Take photos with the mobile app and save them to a note.</p>
-        <a href="#" class="mt-4 inline-block bg-primary2-color text-secondary3-color px-6 py-3 md:px-10 md:py-4 rounded-lg hover:bg-opacity-90">Get Started →</a>
-      </div>
-      <div>
-        <img src="images/img1.jpg" alt="" class="w-full max-w-md md:max-w-lg mx-auto">
-      </div>
-    </div>
-  </section>
-
-  <!-- Work Together Section -->
-  <section class="bg-secondary3-color py-16 px-4 md:px-24">
-    <div class="flex flex-col md:flex-row items-center gap-6 md:gap-20">
-      <div>
-        <img src="images/Work Together Image.png" alt="" class="w-full max-w-md md:max-w-lg mx-auto">
-      </div>
-      <div>
-        <h1 class="text-secondary4-color font-bold text-4xl md:text-6xl">Work together</h1>
-        <p class="mt-4 text-secondary4-color text-base md:text-lg">With Whitepace, share your notes with your colleagues and collaborate on them. You can also publish a note to the internet and share the URL with others.</p>
-        <a href="#" class="mt-4 inline-block bg-primary2-color text-secondary3-color px-6 py-3 md:px-10 md:py-4 rounded-lg hover:bg-opacity-90">Try it now →</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- Use as Extension Section -->
-  <section class="bg-primary-color py-16 px-4 md:px-24">
-    <div class="flex flex-col md:flex-row items-center gap-6 md:gap-20">
-      <div>
-        <h1 class="text-secondary3-color font-bold text-4xl md:text-6xl">Use as Extension</h1>
-        <p class="mt-4 text-secondary3-color text-base md:text-lg">Use the web clipper extension, available on Chrome and Firefox, to save web pages or take screenshots as notes.</p>
-        <a href="#" class="mt-4 inline-block bg-primary2-color text-secondary3-color px-6 py-3 md:px-10 md:py-4 rounded-lg hover:bg-opacity-90">Let's Go →</a>
-      </div>
-      <div>
-        <img src="images/img3.jpg" alt="" class="w-full max-w-md md:max-w-lg mx-auto">
-      </div>
-    </div>
-  </section>
-
-  <!-- Customise Section -->
-  <section class="bg-secondary3-color py-16 px-4 md:px-24">
-    <div class="flex flex-col md:flex-row items-center gap-6 md:gap-20">
-      <div>
-        <img src="images/img4.png" alt="" class="w-full max-w-md md:max-w-lg mx-auto">
-      </div>
-      <div>
-        <h1 class="text-secondary4-color font-bold text-4xl md:text-6xl">Customise it to your needs</h1>
-        <p class="mt-4 text-secondary4-color text-base md:text-lg">Customise the app with plugins, custom themes and multiple text editors (Rich Text or Markdown). Or create your own scripts and plugins using the Extension API.</p>
-        <a href="#" class="mt-4 inline-block bg-primary2-color text-secondary3-color px-6 py-3 md:px-10 md:py-4 rounded-lg hover:bg-opacity-90">Let's Go →</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- Pricing Section -->
-  <section class="bg-primary-color py-16 px-4 md:px-24">
-    <div class="text-center mb-12">
-      <h1 class="text-secondary3-color font-bold text-4xl md:text-6xl">Choose Your Plan</h1>
-      <p class="mt-4 text-secondary3-color text-base md:text-lg">Whether you want to get organized, keep your personal life on track, or boost workplace productivity, Evernote has the right plan for you.</p>
-    </div>
-    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-      <!-- Free Plan -->
-      <div class="bg-secondary3-color text-secondary4-color p-6 rounded-lg shadow">
-        <h2 class="text-2xl font-semibold mb-2">Free</h2>
-        <h1 class="text-4xl font-bold">$0</h1>
-        <p class="mt-4 mb-4">Capture ideas and find them quickly</p>
-        <ul class="space-y-2">
-          <li><i class="fa-regular fa-circle-check"></i> Sync unlimited devices</li>
-          <li><i class="fa-regular fa-circle-check"></i> 10 GB monthly uploads</li>
-          <li><i class="fa-regular fa-circle-check"></i> 200 MB max note size</li>
-        </ul>
-        <a href="#" class="mt-4 inline-block border border-yellow-300 px-6 py-3 rounded-lg">Get Started</a>
-      </div>
-      <!-- Personal Plan -->
-      <div class="bg-primary-color text-secondary3-color p-6 rounded-lg shadow">
-        <h2 class="text-2xl font-semibold mb-2">Personal</h2>
-        <h1 class="text-4xl font-bold text-secondary1-color">$11.99</h1>
-        <p class="mt-4 mb-4">Keep home and family on track</p>
-        <ul class="space-y-2">
-          <li><i class="fa-regular fa-circle-check text-yellow-300"></i> Sync unlimited devices</li>
-          <li><i class="fa-regular fa-circle-check text-yellow-300"></i> 10 GB monthly uploads</li>
-          <li><i class="fa-regular fa-circle-check text-yellow-300"></i> 200 MB max note size</li>
-        </ul>
-        <a href="#" class="mt-4 inline-block bg-primary2-color px-6 py-3 rounded-lg">Get Started</a>
-      </div>
-      <!-- Organization Plan -->
-      <div class="bg-secondary3-color text-secondary4-color p-6 rounded-lg shadow">
-        <h2 class="text-2xl font-semibold mb-2">Organization</h2>
-        <h1 class="text-4xl font-bold">$49.99</h1>
-        <p class="mt-4 mb-4">Capture ideas and find them quickly</p>
-        <ul class="space-y-2">
-          <li><i class="fa-regular fa-circle-check"></i> Sync unlimited devices</li>
-          <li><i class="fa-regular fa-circle-check"></i> 10 GB monthly uploads</li>
-          <li><i class="fa-regular fa-circle-check"></i> 200 MB max note size</li>
-        </ul>
-        <a href="#" class="mt-4 inline-block border border-yellow-300 px-6 py-3 rounded-lg">Get Started</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- Add more sections like your original page similarly, using flex-col md:flex-row and responsive images/text --
-
-  <!-- Your Work, Everywhere Section -->
-<section class="bg-primary-color py-16 px-4 md:px-24">
-  <div class="flex flex-col md:flex-row items-center gap-6 md:gap-20">
-    <div class="md:w-1/2 text-center md:text-left">
-      <h1 class="text-secondary3-color font-bold text-4xl md:text-6xl">Your work, everywhere you are</h1>
-      <p class="mt-4 text-secondary3-color text-base md:text-lg">Access your notes from your computer, phone or tablet by synchronising with various services, including whitepace, Dropbox and OneDrive. The app is available on Windows, macOS, Linux, Android and iOS. A terminal app is also available!</p>
-      <a href="#" class="mt-4 inline-block bg-primary2-color text-secondary3-color px-6 py-3 md:px-10 md:py-4 rounded-lg hover:bg-opacity-90">Try Taskey →</a>
-    </div>
-    <div class="md:w-1/2">
-      <img src="images/App-icon.png" alt="" class="w-full max-w-md md:max-w-lg mx-auto">
-    </div>
-  </div>
-</section>
-
-<!-- 100% Your Data Section -->
-<section class="bg-secondary3-color py-16 px-4 md:px-24">
-  <div class="flex flex-col md:flex-row items-center gap-6 md:gap-20">
-    <div class="md:w-1/2 text-center md:text-left">
-      <h1 class="text-secondary4-color font-bold text-4xl md:text-6xl">100% your data</h1>
-      <p class="mt-4 text-secondary4-color text-base md:text-lg">The app is open source and your notes are saved to an open format, so you'll always have access to them. Uses End-To-End Encryption (E2EE) to secure your notes and ensure no-one but yourself can access them.</p>
-      <a href="#" class="mt-4 inline-block bg-primary2-color text-secondary3-color px-6 py-3 md:px-10 md:py-4 rounded-lg hover:bg-opacity-90">Read More →</a>
-    </div>
-    <div class="md:w-1/2">
-      <img src="images/Element7.png" alt="" class="w-full max-w-md md:max-w-lg mx-auto">
-    </div>
-  </div>
-</section>
-
-<!-- Our Sponsors Section -->
-<section class="bg-secondary3-color py-16 px-4 md:px-24 text-center">
-  <h1 class="text-secondary4-color font-bold text-4xl md:text-6xl mb-12">Our sponsors</h1>
-  <img src="images/sponsors.png" alt="sponsors" class="mx-auto w-full max-w-4xl">
-</section>
-
-<!-- Work with Your Favorite Apps Section -->
-<section class="bg-primary-color py-16 px-4 md:px-24">
-  <div class="flex flex-col md:flex-row items-center gap-6 md:gap-20">
-    <div class="md:w-1/2">
-      <img src="images/Apps.png" alt="" class="w-full max-w-md md:max-w-lg mx-auto">
-    </div>
-    <div class="md:w-1/2 text-center md:text-left">
-      <h1 class="text-secondary3-color font-bold text-4xl md:text-6xl">Work with Your Favorite Apps Using whitepace</h1>
-      <p class="mt-4 text-secondary3-color text-base md:text-lg">Whitepace teams up with your favorite software. Integrate with over 1000+ apps with Zapier to have all the tools you need for your project success.</p>
-      <a href="#" class="mt-4 inline-block bg-primary2-color text-secondary3-color px-6 py-3 md:px-10 md:py-4 rounded-lg hover:bg-opacity-90">Read More →</a>
-    </div>
-  </div>
-</section>
-
-<!-- What Our Clients Say Section -->
-<section class="bg-secondary3-color py-16 px-4 md:px-24">
-  <h1 class="text-secondary4-color font-bold text-4xl md:text-6xl text-center mb-12">What Our Clients Say</h1>
-  <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-    <!-- Client 1 -->
-    <div class="bg-secondary3-color text-secondary4-color p-6 rounded-lg shadow text-left">
-      <img src="images/Quote.png" alt="" class="mb-4">
-      <p class="border-b pb-4 mb-4">Whitepace is designed as a collaboration tool for businesses that is a full project management solution.</p>
-      <div class="flex items-center gap-4">
-        <img src="images/Avater.png" alt="" class="w-12 h-12 rounded-full">
-        <div>
-          <h2 class="font-semibold">Oberon Shaw, MCH</h2>
-          <p class="text-sm">Head of Talent Acquisition, North America</p>
-        </div>
-      </div>
-    </div>
-    <!-- Client 2 -->
-    <div class="bg-primary2-color text-secondary4-color p-6 rounded-lg shadow text-left">
-      <img src="images/Quote2.png" alt="" class="mb-4">
-      <p class="border-b pb-4 mb-4 text-secondary3-color">Whitepace is designed as a collaboration tool for businesses that is a full project management solution.</p>
-      <div class="flex items-center gap-4">
-        <img src="images/Avater2.png" alt="" class="w-12 h-12 rounded-full">
-        <div>
-          <h2 class="font-semibold text-primary-color">Oberon Shaw, MCH</h2>
-          <p class="text-sm text-secondary3-color">Head of Talent Acquisition, North America</p>
-        </div>
-      </div>
-    </div>
-    <!-- Client 3 -->
-    <div class="bg-primary2-color text-secondary4-color p-6 rounded-lg shadow text-left">
-      <img src="images/Quote2.png" alt="" class="mb-4">
-      <p class="border-b pb-4 mb-4 text-secondary3-color">Whitepace is designed as a collaboration tool for businesses that is a full project management solution.</p>
-      <div class="flex items-center gap-4">
-        <img src="images/Avater3.png" alt="" class="w-12 h-12 rounded-full">
-        <div>
-          <h2 class="font-semibold text-primary-color">Oberon Shaw, MCH</h2>
-          <p class="text-sm text-secondary3-color">Head of Talent Acquisition, North America</p>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- Try Whitepace Today Section -->
-<section class="bg-primary-color py-16 px-4 md:px-24 text-center">
-  <h1 class="text-secondary3-color font-bold text-4xl md:text-6xl mb-4">Try Whitepace today</h1>
-  <p class="text-secondary3-color text-base md:text-lg mb-4">Get started for free. Add your whole team as your needs grow.</p>
-  <a href="#" class="inline-block bg-primary2-color text-secondary3-color px-6 py-3 md:px-10 md:py-4 rounded-lg mb-4">Try Taskey free →</a>
-  <p class="text-secondary3-color text-base md:text-lg mt-4">On a big team? Contact sales</p>
-  <img src="images/App-icon.png" alt="" class="mx-auto mt-4 w-32 md:w-40">
-</section>
-
-<!-- Footer Section -->
-<footer class="bg-primary-color text-secondary3-color py-16 px-4 md:px-24">
-  <!-- Top part -->
-  <div class="flex flex-col md:flex-row justify-between gap-8 border-b border-secondary4-color pb-12">
-    <!-- Logo and description -->
-    <div class="md:w-1/4">
-      <img src="images/Logo2.png" alt="WhitePace Logo" class="mb-4">
-      <p class="text-base leading-6 font-primary">Whitepace was created for the new ways we live and work. We make a better workspace around the world.</p>
-    </div>
-    <!-- Product links -->
-    <div class="md:w-1/5">
-      <h3 class="font-bold text-lg mb-4">Product</h3>
-      <ul class="space-y-2">
-        <li class="hover:text-secondary1-color cursor-pointer">Overview</li>
-        <li class="hover:text-secondary1-color cursor-pointer">Pricing</li>
-        <li class="hover:text-secondary1-color cursor-pointer">Customer stories</li>
-      </ul>
-    </div>
-    <!-- Resources links -->
-    <div class="md:w-1/5">
-      <h3 class="font-bold text-lg mb-4">Resources</h3>
-      <ul class="space-y-2">
-        <li class="hover:text-secondary1-color cursor-pointer">Blog</li>
-        <li class="hover:text-secondary1-color cursor-pointer">Guides & tutorials</li>
-        <li class="hover:text-secondary1-color cursor-pointer">Help center</li>
-      </ul>
-    </div>
-    <!-- Company links -->
-    <div class="md:w-1/5">
-      <h3 class="font-bold text-lg mb-4">Company</h3>
-      <ul class="space-y-2">
-        <li class="hover:text-secondary1-color cursor-pointer">About us</li>
-        <li class="hover:text-secondary1-color cursor-pointer">Careers</li>
-        <li class="hover:text-secondary1-color cursor-pointer">Media kit</li>
-      </ul>
-    </div>
-    <!-- Try it today -->
-    <div class="md:w-1/5">
-      <h3 class="font-bold text-lg mb-4">Try It Today</h3>
-      <p class="text-base mb-4">Get started for free. Add your whole team as your needs grow.</p>
-      <a href="#" class="inline-block bg-primary2-color text-secondary3-color px-6 py-3 rounded-lg hover:bg-opacity-90">Start today →</a>
-    </div>
-  </div>
-
-  <!-- Bottom part -->
-  <div class="flex flex-col md:flex-row justify-between items-center gap-4 mt-8">
-    <div class="flex flex-col md:flex-row items-center gap-4 text-sm">
-      <!-- Language selector -->
-      <div class="relative group">
-        <button class="flex items-center gap-1 hover:text-secondary1-color"><i class="fa-solid fa-globe"></i> English <img src="images/Down Arrow.png" alt="" class="w-3"></button>
-        <ul class="absolute left-0 mt-2 hidden w-32 bg-white text-secondary4-color rounded-lg shadow-lg group-hover:block">
-          <li><a href="#" class="block px-4 py-2 hover:text-secondary1-color">Bangla</a></li>
-          <li><a href="#" class="block px-4 py-2 hover:text-secondary1-color">Hindi</a></li>
-        </ul>
-      </div>
-      <a href="#" class="hover:text-secondary1-color">Terms & Privacy</a>
-      <a href="#" class="hover:text-secondary1-color">Security</a>
-      <a href="#" class="hover:text-secondary1-color">Status</a>
-      <a href="#" class="hover:text-secondary1-color">@2025 WhitePace LLC.</a>
-    </div>
-
-    <!-- Social icons -->
-    <div class="flex gap-4 mt-4 md:mt-0 text-xl">
-      <a href="#" class="hover:text-secondary1-color"><i class="fa-brands fa-facebook"></i></a>
-      <a href="#" class="hover:text-secondary1-color"><i class="fa-brands fa-twitter"></i></a>
-      <a href="#" class="hover:text-secondary1-color"><i class="fa-brands fa-linkedin"></i></a>
-    </div>
-  </div>
-</footer>
-
-
-
 </body>
 </html>
