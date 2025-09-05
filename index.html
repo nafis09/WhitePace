@@ -70,13 +70,13 @@
         </ul>
 
              <div>
-            <button id="menu-btn" class="md:hidden flex flex-col justify-between w-8 h-8 text-secondary3-color focus:outline-none">
-            <span class="block h-1 w-full bg-gray-800 transform transition duration-300 ease-in-out"></span>
-            <span class="block h-1 w-full bg-gray-800 transform transition duration-300 ease-in-out"></span>
-            <span class="block h-1 w-full bg-gray-800 transform transition duration-300 ease-in-out"></span>
+            <button id="menu-btn" class="md:hidden flex flex-col justify-between w-6 h-6 text-secondary3-color focus:outline-none">
+            <span class="block h-1 w-full bg-white transform transition duration-300 ease-in-out origin-center"></span>
+            <span class="block h-1 w-full bg-white transform transition duration-300 ease-in-out origin-center"></span>
+            <span class="block h-1 w-full bg-white transform transition duration-300 ease-in-out origin-center"></span>
             </button>
 
-            <div id="menu" class="hidden md:hidden bg-primary-color shadow-lg px-6 py-4">
+            <div id="menu" class="hidden md:hidden px-6 py-4">
             <ul class="flex flex-col space-y-4 font-medium text-secondary3-color">
             <li><a href="#" class="hover:text-primary2-color">Products</a></li>
             <li><a href="#" class="hover:text-primary2-color">Solutions</a></li>
@@ -88,9 +88,7 @@
             </div>
             </div>
 
-
-
-          
+    
     </nav>
 
     <section class=" bg-primary-color">     
@@ -140,7 +138,7 @@
     <section class=" bg-primary-color">     
         <div class="flex flex-col md:flex-row gap-6 px-4 md:px-24">
          <div class="mt-10 md:mt-[150px] mb-10 md:mb-[234px] md:ml-[255px]">
-            <div class="bg-[url('/images/Element2.png')] bg-no-repeat bg-bottom pb-8">
+            <div class="bg-[url('/images/Element2.png')] bg-no-repeat bg-bottom-left pb-8">
             <h1 class="text-secondary3-color font-bold text-4xl md:text-7xl mt-6 md:mt-28 font-primary">Use as Extension</h1>
             </div>
             <p class="mt-4 md:mt-6 mb-6 md:mb-15 font-primary text-base md:text-lg leading-[30px] text-secondary3-color">Use the web clipper extension, available on Chrome and Firefox, to save web pages or take screenshots as notes.</p>
@@ -169,10 +167,12 @@
     </section>
 
    <section class="bg-secondary3-color py-10 md:py-20 px-4 md:px-24">
-      <div class="bg-[url('/images/Element4.png')] bg-no-repeat bg-bottom pb-4 text-center mb-10 md:mb-16">
+      <div class="bg-[url('/images/Element4.png')] bg-no-repeat bg-bottom text-center pb-4">
          <h1 class=" text-secondary4-color font-bold text-3xl md:text-7xl font-primary">Choose Your Plan</h1>
-         <p class=" mt-4 md:mt-6 font-primary text-base md:text-lg leading-[30px] text-secondary4-color text-center">Whether you want to get organized, keep your personal life on track, or boost workplace productivity, Evernote has the right plan for you.</p>
+         
       </div>
+
+      <p class=" mt-4 md:mt-6 font-primary text-base md:text-lg leading-[30px] text-secondary4-color text-center">Whether you want to get organized, keep your personal life on track, or boost workplace productivity, Evernote has the right plan for you.</p>
 
    <div class="md:flex md:flex-1 md:justify-center md:items-center md:text-center md:mt-20 grid grid-cols-1 gap-6">
 
@@ -407,19 +407,22 @@
 
 
 <script>
-  const btn = document.getElementById('menu-btn');
-  const menu = document.getElementById('menu');
-  const lines = btn.querySelectorAll('span');
+const btn = document.getElementById('menu-btn');
+const menu = document.getElementById('menu');
+const lines = btn.querySelectorAll('span');
  
-  btn.addEventListener('click', () => {
-    menu.classList.toggle('hidden');
+btn.addEventListener('click', () => {
+  menu.classList.toggle('hidden');
+  
+  lines[0].classList.toggle('rotate-45');
+  lines[0].classList.toggle('translate-y-2.5');
+ 
+  lines[1].classList.toggle('opacity-0');
 
-    lines[0].classList.toggle('rotate-45');
-    lines[0].classList.toggle('translate-y-2');
-    lines[1].classList.toggle('opacity-0');
-    lines[2].classList.toggle('-rotate-45');
-    lines[2].classList.toggle('-translate-y-2');
-  });
+  lines[2].classList.toggle('-rotate-45');
+  lines[2].classList.toggle('-translate-y-2.5');
+});
+
 </script>
 
 </body>
